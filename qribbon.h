@@ -69,6 +69,7 @@ protected:
 
 public:
     QRibbon(QWidget *parent = 0);
+    ~QRibbon();
 
 public:
     int addTab(QWidget *widget, const QIcon &icon, const QString &label, const QString &name = 0);

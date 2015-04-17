@@ -56,8 +56,11 @@ QRibbonSection::QRibbonSection(QWidget *parent, const QString &_title, const QSt
     titleFont.setPointSize(titleFont.pointSize()*0.98f);
     title->setFont(titleFont);
 
-    QIcon *dtl = new QIcon(":/icons/QRibbonDetails.svg");
-    details = new QRibbonButton(*dtl, "", footer);
+    {
+        QIcon *dtl = new QIcon(":/icons/QRibbonDetails.svg");
+        details = new QRibbonButton(*dtl, "", footer);
+        delete dtl;
+    }
     details->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
     QFont f;
     QFontMetrics metrics(f);
@@ -81,7 +84,6 @@ QRibbonSection::QRibbonSection(QWidget *parent, const QString &_title, const QSt
 
 QRibbonSection::~QRibbonSection()
 {
-
 }
 
 void QRibbonSection::setDetailsAction(QAction *_action)
