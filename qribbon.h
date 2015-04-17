@@ -41,18 +41,16 @@
 #ifndef QRIBBON_H
 #define QRIBBON_H
 
+#include "qribbon_global.h"
 #include <QWidget>
 #include <QTabWidget>
 #include <QPushButton>
-#include <QtDesigner/QDesignerExportWidget>
 
 class QRibbonSection;
 
-class QDESIGNER_WIDGET_EXPORT QRibbon : public QTabWidget
+class QRIBBON_EXPORT QRibbon : public QTabWidget
 {
     Q_OBJECT
-    Q_PROPERTY(int currentIndex READ currentIndex WRITE setCurrentIndex)
-    //Q_PROPERTY(QString pageTitle READ pageTitle WRITE setPageTitle STORED false)
 
 private:
     bool                     hidden, popup;

@@ -84,6 +84,12 @@ QRibbon::QRibbon(QWidget *parent) : QTabWidget(parent)
     }
 }
 
+QRibbon::~QRibbon()
+{
+    delete up;
+    delete point;
+}
+
 QWidget *QRibbon::makeTab(QWidget *widget, int index)
 {
     QWidget *tab = new QWidget();

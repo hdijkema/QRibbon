@@ -1,13 +1,14 @@
 #ifndef QRIBBONSECTION_H
 #define QRIBBONSECTION_H
 
+#include "qribbon_global.h"
+
 #include <QAction>
 #include <QLabel>
 #include <QPushButton>
 #include <QWidget>
-#include <QtDesigner/QDesignerExportWidget>
 
-class QDESIGNER_WIDGET_EXPORT QRibbonSection : public QWidget
+class QRIBBON_EXPORT  QRibbonSection : public QWidget
 {
     Q_OBJECT
 

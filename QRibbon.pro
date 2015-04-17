@@ -1,13 +1,15 @@
+QT       += widgets
 
 CONFIG(app) {
     warning(App config)
 
-    TEMPLATE = app
-    QT += widgets designer
+    QT += core gui
 
-    CONFIG      += plugin
+    TEMPLATE = app
+    DEFINES += QRIBBON_TEST
 
     HEADERS       = qribbon.h \
+                    qribbon_global.h \
                     qribbontest.h \
                     qribbonsection.h \
                     qribbonbutton.h
@@ -23,73 +25,60 @@ CONFIG(app) {
 } else {
     warning(Lib config)
 
-    QT          += widgets designer
-
-    QTDIR_build {
-        # This is only for the Qt build. Do not use externally. We mean it.
-        PLUGIN_TYPE = designer
-        PLUGIN_CLASS_NAME = QRibbonPlugin
-        load(qt_plugin)
+    CONFIG(installd) {
+        TARGET = QRibbond
     } else {
-        # Library build
-        warning(Library build)
-
-        CONFIG      += plugin
-        TEMPLATE    = lib
-
-        TARGET = $$qtLibraryTarget($$TARGET)
-
-        target.path = $$[QT_INSTALL_PLUGINS]/designer
-        INSTALLS += target
-
-        mylib.CONFIG = no_check_exists
-        mylib.files = release/QRibbonPlugin.lib release/QRibbonPlugin.dll
-        mylib.path = ../lib
-        INSTALLS += mylib
-
-        warning($$INSTALLS)
-
-        mylibd.CONFIG = no_check_exists
-        mylibd.files = debug/QRibbonPlugind.lib debug/QRibbonPlugind.dll
-        mylibd.path = ../lib
-        INSTALLS += mylibd
+        TARGET = QRibbon
     }
 
-    HEADERS     = \
+    TEMPLATE    = lib
+    DEFINES += QRIBBON_LIBRARY
+
+    HEADERS = \
         qribbon.h \
-        qribbontest.h
+        qribbon_global.h \
+        qribbonsection.h \
+        qribbonbutton.h \
+
     SOURCES     = \
         qribbon.cpp \
-        qribbontest.cpp \
-        main.cpp
-
-    HEADERS += \
-        qribbonsection.h
-
-    SOURCES += \
-        qribbonsection.cpp
-
-    HEADERS += \
-        qribbonbutton.h
-
-    SOURCES += \
+        qribbonsection.cpp \
         qribbonbutton.cpp
 
+    target.path = ../lib
+    INSTALLS += target
+
+    mylib.CONFIG = no_check_exists
+    mylib.files = release/QRibbonPlugin.lib release/QRibbonPlugin.dll
+    mylib.path = ../lib
+    INSTALLS += mylib
+
+    warning($$INSTALLS)
+
+    mylibd.CONFIG = no_check_exists
+    mylibd.files = debug/QRibbonPlugind.lib debug/QRibbonPlugind.dll
+    mylibd.path = ../lib
+    INSTALLS += mylibd
+
+
     DISTFILES +=
-        OTHER_FILES +=
+    OTHER_FILES +=
 
     header_files.files = $$HEADERS
     header_files.path = ../include
     INSTALLS += header_files
 
     warning($$INSTALLS)
-
-
-
 }
 
 RESOURCES += \
     qribbon.qrc
+
+DISTFILES += \
+    memorycheck.bat \
+    LICENSE \
+    README.md
+
 
 
 

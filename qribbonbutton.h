@@ -1,10 +1,12 @@
 #ifndef QRIBBONBUTTON_H
 #define QRIBBONBUTTON_H
 
+#include "qribbon_global.h"
+
 #include <QPushButton>
 
 
-class QRibbonButton : public QPushButton
+class QRIBBON_EXPORT QRibbonButton : public QPushButton
 {
 public:
     QRibbonButton(QWidget *parent);
