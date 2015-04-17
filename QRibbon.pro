@@ -57,31 +57,17 @@ CONFIG(app) {
 
     HEADERS     = \
         qribbon.h \
-        qribbonplugin.h \
-        qribboncontainerextension.h \
-        qribbonextensionfactory.h \
         qribbontest.h
     SOURCES     = \
         qribbon.cpp \
-        qribbonplugin.cpp \
-        qribboncontainerextension.cpp \
-        qribbonextensionfactory.cpp \
         qribbontest.cpp \
         main.cpp
 
     HEADERS += \
-        qribbonsection.h \
-        qribboncollection.h \
-        qribbonsectionplugin.h \
-        qribbonsectionextensionfactory.h \
-        qribbonsectioncontainerextension.h
+        qribbonsection.h
 
     SOURCES += \
-        qribbonsection.cpp \
-        qribboncollection.cpp \
-        qribbonsectionplugin.cpp \
-        qribbonsectionextensionfactory.cpp \
-        qribbonsectioncontainerextension.cpp
+        qribbonsection.cpp
 
     HEADERS += \
         qribbonbutton.h
@@ -89,9 +75,8 @@ CONFIG(app) {
     SOURCES += \
         qribbonbutton.cpp
 
-    DISTFILES += \
-        QRibbonSection.json
-        OTHER_FILES += QRibbon.json
+    DISTFILES +=
+        OTHER_FILES +=
 
     header_files.files = $$HEADERS
     header_files.path = ../include
