@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="120.1292"
+   height="77.969757"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="RibbonUp.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="99.694686"
+     inkscape:cy="7.3828974"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1289"
+     inkscape:window-height="823"
+     inkscape:window-x="519"
+     inkscape:window-y="11"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Laag 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-169.97998,-454.9247)">
+    <g
+       id="g3846">
+      <g
+         transform="matrix(0.71100679,0.70318515,-0.70318515,0.71100679,416.46533,-26.487976)"
+         id="g3026">
+        <path
+           sodipodi:type="arc"
+           style="fill:#666666"
+           id="path2996"
+           sodipodi:cx="134.60283"
+           sodipodi:cy="539.20471"
+           sodipodi:rx="22.146076"
+           sodipodi:ry="32.324883"
+           d="m 135.77048,506.92479 c 12.21393,0.94128 21.5925,16.15654 20.94762,33.98425 -0.64487,17.82771 -11.06899,31.51687 -23.28292,30.57559 -0.12669,-0.01 -0.25333,-0.0211 -0.37988,-0.0341 l 1.54753,-32.24587 z"
+           transform="matrix(0.78763098,-0.88421734,0.87324199,0.79753034,-348.83162,195.10825)"
+           sodipodi:start="4.7651384"
+           sodipodi:end="7.9239171" />
+        <rect
+           style="fill:#666666"
+           id="rect3004"
+           width="13.664758"
+           height="77.963524"
+           x="-213.00911"
+           y="469.4946"
+           transform="matrix(0.66874334,-0.74349334,0.71815264,0.69588562,0,0)"
+           ry="6.840343"
+           rx="6.840343" />
+      </g>
+      <rect
+         transform="matrix(0.99997412,-0.00719456,0.00719456,0.99997412,0,0)"
+         ry="9.3657246"
+         y="478.33524"
+         x="218.21754"
+         height="33.335007"
+         width="57.578693"
+         id="rect3006"
+         style="fill:#666666"
+         rx="9.3657246" />
+      <g
+         id="g3026-7"
+         transform="matrix(-0.50203885,-0.46319222,0.50391589,-0.54065707,143.49118,870.91869)">
+        <path
+           sodipodi:type="arc"
+           style="fill:#666666"
+           id="path2996-4"
+           sodipodi:cx="134.60283"
+           sodipodi:cy="539.20471"
+           sodipodi:rx="22.146076"
+           sodipodi:ry="32.324883"
+           d="m 135.77048,506.92479 c 12.21393,0.94128 21.5925,16.15654 20.94762,33.98425 -0.64487,17.82771 -11.06899,31.51687 -23.28292,30.57559 -0.12669,-0.01 -0.25333,-0.0211 -0.37988,-0.0341 l 1.54753,-32.24587 z"
+           transform="matrix(0.78763098,-0.88421734,0.87324199,0.79753034,-348.83162,195.10825)"
+           sodipodi:start="4.7651384"
+           sodipodi:end="7.9239171" />
+        <rect
+           style="fill:#666666"
+           id="rect3004-0"
+           width="13.664758"
+           height="77.963524"
+           x="-213.00911"
+           y="469.4946"
+           transform="matrix(0.66874334,-0.74349334,0.71815264,0.69588562,0,0)"
+           ry="6.840343"
+           rx="6.840343" />
+      </g>
+      <path
+         sodipodi:nodetypes="cccccccc"
+         inkscape:connector-curvature="0"
+         id="path3058"
+         d="m 169.97998,494.78476 0.9847,-1.75292 2.31044,-1.27461 48.70979,-8.12973 1.02182,20.2262 -50.50891,-6.61422 -1.42271,-0.5028 z"
+         style="fill:#666666;stroke:none" />
+    </g>
+  </g>
+</svg>
