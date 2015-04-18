@@ -1,4 +1,4 @@
-
+//#include <vld.h>
 #include <QApplication>
 
 #include "qribbontest.h"
