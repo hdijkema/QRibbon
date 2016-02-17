@@ -77,9 +77,9 @@ QRibbon::QRibbon(QWidget *parent) : QTabWidget(parent)
         sheet.append("QTabBar::tab:selected { background: " + c.name() + ";padding: 8px; }");
         sheet.append("QTabBar::tab { background: "+c.name()+"; border: 1px solid #c0c0c0; margin: 0px; padding: 8px; margin-bottom: -2px; border-bottom: 0px; }");
         sheet.append("QTabWidget::tab-bar { left: 3pt; }");
-        QMessageBox box;
-        box.setText(sheet);
-        box.exec();
+        //QMessageBox box;
+        //box.setText(sheet);
+        //box.exec();
         this->setStyleSheet(sheet);
     }
 }

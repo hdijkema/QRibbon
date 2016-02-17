@@ -130,7 +130,7 @@ void QRibbonSection::setCurrentIndex(int i) {
 void QRibbonSection::addAction(QAction * a, const QString &name)
 {
     QGridLayout *l = (QGridLayout *) buttons->layout();
-    QRibbonButton *btn = new QRibbonButton(a->icon(), a->text(), buttons);
+    QRibbonButton *btn = new QRibbonButton(a->icon(), a->text(), name, buttons);
     btn->setAction(a);
     connect(btn, SIGNAL(clicked()), this, SLOT(activateAction()));
     if (&name != 0) { btn->setObjectName(name); } else { btn->setObjectName(a->objectName()); }
@@ -142,7 +142,7 @@ void QRibbonSection::addAction(QAction * a, const QString &name)
 void QRibbonSection::addLargeAction(QAction * a, const QString &name)
 {
     QGridLayout *l = (QGridLayout *) buttons->layout();
-    QRibbonButton *btn = new QRibbonButton(a->icon(), a->text(), buttons);
+    QRibbonButton *btn = new QRibbonButton(a->icon(), a->text(), name, buttons);
     btn->setAction(a);
     connect(btn, SIGNAL(clicked()), this, SLOT(activateAction()));
     if (&name != 0) { btn->setObjectName(name); } else { btn->setObjectName(a->objectName()); }

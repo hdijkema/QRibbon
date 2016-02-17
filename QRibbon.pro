@@ -53,14 +53,14 @@ CONFIG(app) {
 
     mylib.CONFIG = no_check_exists
     mylib.files = release/QRibbonPlugin.lib release/QRibbonPlugin.dll
-    mylib.path = ../lib
+    mylib.path =../lib
     INSTALLS += mylib
 
     warning($$INSTALLS)
 
     mylibd.CONFIG = no_check_exists
     mylibd.files = debug/QRibbonPlugind.lib debug/QRibbonPlugind.dll
-    mylibd.path = ../lib
+    mylibd.path =../lib
     INSTALLS += mylibd
 
 
